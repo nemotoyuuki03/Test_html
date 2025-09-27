@@ -1,0 +1,82 @@
+/*全体共通*/
+body {
+
+    font-family: "Noto Serif JP", serif;
+    font-weight: 200;
+    background-color: #181619;
+
+}
+/*ヘッダー*/
+header
+{
+    color: #ffffff;
+}
+header .row
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  
+    max-width: 1280px;
+    padding: 20px 0;
+}
+header .logo
+{
+    font-size: 24px;
+    font-weight:bold;
+}
+header nav ul
+{
+    display: flex;
+}
+header nav ul li
+{
+    margin-left: 50px;
+    
+}
+
+/*メインビジュアル*/
+.main_visual
+{
+    background-image: url('../images/mv.jpg');/*背景に画像を使います*/
+    background-size: cover;/*背景画像を全体に広げる*/
+    background-position: center top;
+}
+.main_visual .container
+{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 640px;
+    position: relative;
+}
+.main_visual .title
+{
+    position: absolute;/*自由に位置を設定*/
+    bottom: 100px;
+    left: 0;
+
+}
+.main_visual h1
+{
+    font-size: 50px;
+    font-weight: 700px;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+.main_visual p
+{
+    font-size: 24px;
+    font-weight: 900;
+    color: #ffffff;
+}
+/*要素ごとに異なる太さを設定する*/
+h1 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
