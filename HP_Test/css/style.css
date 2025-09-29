@@ -43,6 +43,7 @@ header nav ul li
     background-image: url('../images/mv.jpg');/*背景に画像を使います*/
     background-size: cover;/*背景画像を全体に広げる*/
     background-position: center top;
+    position: relative;
 }
 .main_visual .container
 {
@@ -57,7 +58,7 @@ header nav ul li
     position: absolute;/*自由に位置を設定*/
     bottom: 100px;
     left: 0;
-
+    z-index: 2;/*2番目に奥*/
 }
 .main_visual h1
 {
@@ -71,6 +72,18 @@ header nav ul li
     font-size: 24px;
     font-weight: 900;
     color: #ffffff;
+}
+.main_visual .purple
+{
+    background-color: #6f19a7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top :0;
+    left:0;
+    z-index: 1;/*一番奥*/
+     /* opacity: 0.5;  半分透明になる */
+    mix-blend-mode: multiply;
 }
 /*要素ごとに異なる太さを設定する*/
 h1 {
