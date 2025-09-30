@@ -59,19 +59,23 @@ header nav ul li
     bottom: 100px;
     left: 0;
     z-index: 2;/*2番目に奥*/
+    
 }
 .main_visual h1
 {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 700px;
     color: #ffffff;
     margin-bottom: 24px;
 }
 .main_visual p
 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 900;
     color: #ffffff;
+    position: absolute;
+    left: 5vw;
+    
 }
 .main_visual .purple
 {
@@ -84,6 +88,68 @@ header nav ul li
     z-index: 1;/*一番奥*/
      /* opacity: 0.5;  半分透明になる */
     mix-blend-mode: multiply;
+}
+/* セクション➀ */
+.section1
+{
+    color: #ffffff;
+    padding: 80px 0 ;
+   
+}
+.section1 .container
+{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.section1 .row
+{
+    display: flex;
+    justify-content: space-between;
+}
+.section1 .col
+{
+    width: 48%;
+    
+}
+.section1 .sub_title
+{
+    font-size:20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.section1 h2
+{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 2
+    ;
+
+}
+.section1 .text
+{
+    font-size: 16px;
+    line-height: 1.8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding: 50px 0;
+}
+.section1 .btn
+{
+    font-size: 18px;
+    border: solid 1px #ffffff;
+    border-radius: 100px;
+    display:inline-block;
+    width: 270px;
+    line-height: 60px;
+    text-align: center;
+    transition: .2s;
+}
+.section1 .btn:hover
+{
+    color: aqua;
+    border: solid 1px aqua;
+    transition: .2s;
 }
 /*要素ごとに異なる太さを設定する*/
 h1 {
